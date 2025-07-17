@@ -16,7 +16,9 @@ jobs:
             cat README.md
 
         - name: Generate Ascii artwork using cowsay
-          run: cowsay -f dragon "I am a Dragon, Hear me ROAR!!!" >> dragon.txt
+          run: |
+            sudo apt install cowsay
+            cowsay -f dragon "I am a Dragon, Hear me ROAR!!!" >> dragon.txt
 
         # - name: Query List of files in repo
         #   run: ls -lh
