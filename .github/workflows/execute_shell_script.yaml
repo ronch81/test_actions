@@ -11,6 +11,6 @@ jobs:
 
         - name: My first multiline commit
           run: | 
-            chmod +x dragonfetch.sh
+            chmod +x ./dragonfetch.sh
             ./dragonfetch.sh
         
