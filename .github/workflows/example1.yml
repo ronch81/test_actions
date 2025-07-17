@@ -19,6 +19,7 @@ jobs:
           run: |
             sudo apt install cowsay
             cowsay -f dragon "I am a Dragon, Hear me ROAR!!!" >> dragon.txt
+            cat dragon.txt
 
         # - name: Query List of files in repo
         #   run: ls -lh
