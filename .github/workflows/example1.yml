@@ -9,13 +9,16 @@ jobs:
         - name: Checkout
           uses: actions/checkout@v4
 
-        - name: My First Step
-          run: echo "My First GitHubs Actions Job"
+        - name: My first multiline commit
+          run: | 
+            echo "My First GitHubs Actions Job"
+            ls -lh
+            cat README.md
 
-        - name: Query List of files in repo
-          run: ls -lh
-          
-        - name: Show contents of README.MD
-          run: cat README.md
+        # - name: Query List of files in repo
+        #   run: ls -lh
+
+        # - name: Show contents of README.MD
+        #   run: cat README.md
 
 
